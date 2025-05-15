@@ -23,7 +23,7 @@ curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.
 2. Instale o speedtest-cli usando o yum:
 
 ```bash
-sudo yum install speedtest
+sudo yum install -y speedtest
 ```
 
 **Configuração:**
@@ -46,11 +46,7 @@ sudo yum install speedtest
    Para editar o crontab, execute:
 
    ```bash
-   sudo crontab -e
-   ```
-   Se não estiver, adicione a seguinte linha ao crontab:
-   ```bash
-   0 1,5,9,13,17,21 * * * /etc/zabbix/zabbix_agentd.d/run_and_send_speedtest_metrics.sh > /var/log/zabbix_speedtest_sender.log 2>&1
+   (crontab -l 2>/dev/null; echo "0 1,5,9,13,17,21 * * * /etc/zabbix/zabbix_agentd.d/run_and_send_speedtest_metrics.sh > /var/log/zabbix_speedtest_sender.log 2>&1") | sudo crontab -
    ```
 
 
