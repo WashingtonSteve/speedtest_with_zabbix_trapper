@@ -6,6 +6,9 @@ Este script coleta dados de velocidade de internet usando o speedtest-cli e envi
 
 * **Zabbix Agent configurado:** O agente Zabbix deve estar instalado e funcionando corretamente na máquina alvo.
 * **Zabbix Sender instalado:** O Zabbix Sender é necessário para enviar as métricas para o servidor Zabbix.
+```bash
+sudo yum install -y zabbix-sender
+```
 * **jq instalado:** O jq é usado para processar a saída do speedtest-cli.
 * **speedtest-cli instalado:** O speedtest-cli é usado para realizar os testes de velocidade.
 * **o Arquivo run_and_send_speedtest_metrics.sh:** O script que coleta os dados de velocidade e os envia para o Zabbix deve está na pasta /etc/zabbix/zabbix_agentd.d/run_and_send_speedtest_metrics.sh .
