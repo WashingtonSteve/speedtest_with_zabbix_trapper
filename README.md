@@ -4,7 +4,7 @@ Este script coleta dados de velocidade de internet usando o speedtest-cli e envi
 
 **Necessidades:**
 
-* **Zabbix Agent configurado:** O agente Zabbix deve estar instalado e funcionando corretamente na máquina alvo.
+* **Zabbix Agent configurado:** O agente Zabbix deve estar instalado e funcionando corretamente na máquina alvo(Padrão esperado VSRV-ZABBIX-PROXY-[NomeDaPrefeitura]).
 * **Zabbix Sender instalado:** O Zabbix Sender é necessário para enviar as métricas para o servidor Zabbix.
 ```bash
 sudo yum install -y zabbix-sender
