@@ -60,7 +60,3 @@ sudo yum install speedtest
 * O script envia as seguintes métricas para o Zabbix: download, upload e ping.
 * As métricas são enviadas com o prefixo "speedtest.".
 * O log do script é gravado em `/var/log/zabbix_speedtest_sender.log`.
-
-**Suporte:**
-
-Para obter suporte, entre em contato com [seu nome/equipe de suporte].
